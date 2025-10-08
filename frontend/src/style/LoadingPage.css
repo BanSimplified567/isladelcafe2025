@@ -1,0 +1,212 @@
+/* LoadingPage.css */
+
+/* Define CSS custom properties for consistent theming */
+:root {
+  --color-bg: #f5e8c7; /* Light coffee background */
+  --color-cup: #ffffff; /* White cup */
+  --color-coffee: #3c2005; /* Coffee color */
+  --color-accent: #4a2c2a; /* Dark coffee border */
+  --color-steam: #d1d5db; /* Light gray steam */
+  --color-text: #4a2c2a; /* Dark text */
+  --color-text-secondary: #6b4e31; /* Lighter text */
+  --radius-md: 8px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .loading-cup,
+  .loading-liquid,
+  .loading-steam,
+  .loading-progress-fill {
+    animation: none !important;
+  }
+}
+
+/* Root loader */
+.loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+/* Container */
+.loading-container {
+  text-align: center;
+  padding: 1rem;
+  max-width: 90vw;
+}
+
+/* Coffee cup */
+.loading-coffee {
+  position: relative;
+  width: 8rem; /* Flexible size */
+  height: 8rem;
+  margin: 0 auto;
+}
+
+.loading-cup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--color-cup);
+  border: 0.25rem solid var(--color-accent);
+  border-radius: 0 0 2.5rem 2.5rem;
+  overflow: hidden;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* Coffee liquid */
+.loading-liquid {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  background: var(--color-coffee);
+  animation: fillCoffee 2.5s ease-in-out infinite alternate;
+}
+
+/* Cup handle */
+.loading-handle {
+  position: absolute;
+  right: -1.25rem;
+  top: 2rem;
+  width: 1.5rem;
+  height: 2.5rem;
+  border: 0.25rem solid var(--color-accent);
+  border-left: none;
+  border-radius: 0 1rem 1rem 0;
+  background: transparent;
+}
+
+/* Steam */
+.loading-steam-container {
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.loading-steam {
+  width: 0.5rem;
+  height: 1.5rem;
+  background: var(--color-steam);
+  border-radius: 0.5rem;
+  opacity: 0.6;
+  animation: rise 2s infinite ease-in-out;
+}
+
+.loading-steam2 {
+  animation-delay: 0.3s;
+}
+
+.loading-steam3 {
+  animation-delay: 0.6s;
+}
+
+/* Text */
+.loading-title {
+  margin-top: 2rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.loading-subtitle {
+  margin-top: 0.5rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: var(--color-text-secondary);
+}
+
+/* Progress bar */
+.loading-progress-bar {
+  width: 10rem;
+  height: 0.625rem;
+  background: var(--color-cup);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin: 1rem auto 0;
+}
+
+.loading-progress-fill {
+  width: 0;
+  height: 100%;
+  background: var(--color-accent);
+  animation: loadProgress 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes fillCoffee {
+  0% {
+    height: 20%;
+  }
+  100% {
+    height: 60%;
+  }
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-1.5rem) scaleX(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-2.5rem) scaleX(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes loadProgress {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .loading-coffee {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .loading-progress-bar {
+    width: 8rem;
+  }
+
+  .loading-title {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .loading-coffee {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .loading-progress-bar {
+    width: 6rem;
+  }
+}

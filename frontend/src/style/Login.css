@@ -1,0 +1,324 @@
+.loginAdmin {
+  font-family: var(--font-opensans);
+  color: var(--color-text);
+  background-color: var(--color-bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.loginAdminContainer {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--color-bg-light);
+}
+
+.loginImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+}
+
+.loginIsladelCafe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+}
+
+.loginAdminCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--color-bg);
+  height: 100vh;
+  width: 50vw;
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .loginAdminContainer {
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  .loginImageContainer {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .loginIsladelCafe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .loginAdminCard {
+    width: 100vw;
+    height: 50vh;
+    padding: 1rem;
+  }
+}
+
+.loginAdminHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.loginAdminTitle {
+  margin-top: 1rem;
+  font-family: var(--font-playfairDisplay);
+  font-size: var(--font-large);
+  font-weight: 700;
+  color: var(--color-fifth);
+  line-height: var(--line-height-heading);
+}
+
+.loginAdminSubtitle {
+  margin-top: 0.5rem;
+  font-family: var(--font-opensans);
+  font-size: var(--font-x-small);
+  color: var(--color-text-light);
+  line-height: var(--line-height-paragraph);
+}
+
+.loginAdminForm {
+  width: 100%;
+  max-width: 28rem;
+  margin-bottom: 1.5rem;
+}
+
+.loginAdminFormGroup {
+  margin-bottom: 1rem;
+}
+
+.loginAdminLabel {
+  display: block;
+  font-family: var(--font-opensans);
+  font-size: var(--font-x-small);
+  font-weight: 500;
+  color: var(--color-six);
+}
+
+.loginAdminInput {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-opensans);
+  font-size: var(--font-x-small);
+  transition: var(--transition);
+}
+
+.loginAdminInput:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.loginAdminPasswordWrapper {
+  position: relative;
+}
+
+.loginAdminPasswordToggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-right: 0.75rem;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-light);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.loginAdminPasswordToggle:hover {
+  color: var(--color-fifth);
+}
+
+.loginAdminPasswordToggle:focus {
+  outline: none;
+}
+
+.loginAdminIcon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.loginAdminOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+
+.loginAdminRemember {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--color-six);
+}
+
+.loginAdminCheckbox {
+  height: 1rem;
+  width: 1rem;
+  color: var(--color-primary);
+  border-color: var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.loginAdminCheckbox:focus {
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.loginAdminCheckboxLabel {
+  margin-left: 0.5rem;
+  font-family: var(--font-opensans);
+  font-size: var(--font-x-small);
+  color: var(--color-six);
+}
+
+.loginAdminForgot {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loginAdminLink {
+  font-family: var(--font-opensans);
+  font-size: var(--font-x-small);
+  font-weight: 500;
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.loginAdminLink:hover {
+  color: var(--color-primary-light);
+  background-color: var(--color-bg-light);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.loginAdminLink:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(166, 123, 96, 0.3);
+  /* Using --color-primary with opacity */
+}
+
+.loginAdminLink:disabled {
+  color: var(--color-text-light);
+  background-color: transparent;
+  border-color: transparent;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.loginAdminButton {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  color: var(--color-bg);
+  background-color: var(--color-fifth);
+  border: 1px solid var(--color-six);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: var(--font-playfairDisplay);
+  font-size: var(--font-small);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.loginAdminButton:hover {
+  background-color: var(--color-six);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.loginAdminButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(166, 123, 96, 0.3);
+  /* Using --color-primary with opacity */
+}
+
+.loginAdminButton:disabled {
+  background-color: var(--color-text-light);
+  border-color: var(--color-text-light);
+  color: var(--color-bg-light);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.loginAdminButtonLoading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.loginAdminSpinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--color-bg);
+  animation: spin 1s ease-in-out infinite;
+}
+
+.loginAdminInput:disabled {
+  background-color: var(--color-bg-light);
+  cursor: not-allowed;
+}
+
+.loginAdminError {
+  background-color: #fff5f5;
+  border: 1px solid #feb2b2;
+  color: #c53030;
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  font-family: var(--font-opensans);
+  font-size: var(--font-x-small);
+}
+
+.loginAdminSuccess {
+  background-color: #f0fff4;
+  border: 1px solid #9ae6b4;
+  color: #2f855a;
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  font-family: var(--font-opensans);
+  font-size: var(--font-x-small);
+}
+
+.loginAdminFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}

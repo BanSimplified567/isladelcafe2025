@@ -1,0 +1,852 @@
+/* AboutUs.css */
+/* Hero Section - Elegant Coffee Shop Style */
+.about-us-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.253), rgba(49, 49, 49, 0.425)),
+    url('../assets/IslaDelCafeBg1.jpg') center/cover;
+  text-align: center;
+  padding: 8rem 2rem;
+  position: relative;
+}
+
+.about-us-hero-content {
+  margin: 0 auto;
+}
+
+.about-us-title {
+  font-weight: 500;
+  font-family: var(--font-playfairDisplay);
+  font-size: 3.2rem;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.about-us-title span {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 4rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.3px;
+}
+
+.elegant-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.elegant-divider .coffee-icon {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  margin-top: -3px;
+}
+
+.about-us-subtitle {
+  font-family: var(--font-playfairDisplay);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .about-us-hero {
+    padding: 5rem 1.5rem;
+  }
+
+  .about-us-title {
+    font-size: 2.5rem;
+  }
+
+  .about-us-title span {
+    font-size: 3rem;
+  }
+
+  .about-us-subtitle {
+    font-size: var(--font-x-small);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us-hero {
+    padding: 4rem 1rem;
+  }
+
+  .about-us-title {
+    font-size: 2rem;
+  }
+
+  .about-us-title span {
+    font-size: 2.2rem;
+  }
+
+  .elegant-divider {
+    margin: 1rem auto;
+  }
+
+  .coffee-icon {
+    font-size: 1.2rem;
+    padding: 0 0.8rem;
+  }
+}
+
+
+
+/* Story Section - Elegant Coffee Shop Style */
+.about-us-story {
+  background: var(--color-bg-light);
+  padding: 6rem 2rem;
+}
+
+.about-us-story-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-story-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+  }
+}
+
+.about-us-story-text {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.about-us-section-title {
+  font-family: var(--font-playfairDisplay);
+  font-size: var(--font-large);
+  color: var(--color-fifth);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.text-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto 2.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.text-divider .coffee-icon {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+.about-us-text {
+  font-size: var(--font-x-small);
+  color: var(--color-six);
+  line-height: var(--line-height-loose);
+  text-align: center;
+}
+
+.about-us-story-text .about-us-text {
+  margin-bottom: 1.8rem;
+}
+
+.about-us-mission-text .about-us-text {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .about-us-text {
+    text-align: left;
+  }
+
+  .text-divider {
+    margin: 1.5rem 0 2.5rem;
+    justify-content: flex-start;
+  }
+}
+
+.about-us-story-image {
+  flex: 1;
+}
+
+.image-frame {
+  border: 12px solid white;
+  box-shadow: 0 0 0 1px #e8e1d9,
+    0 15px 30px -10px rgba(92, 61, 46, 0.1);
+  overflow: hidden;
+}
+
+.image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 767px) {
+  .about-us-story {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-us-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us-story {
+    padding: 3rem 1rem;
+  }
+
+  .image-frame {
+    border-width: 8px;
+  }
+}
+
+
+
+/* Mission Section - Elegant Coffee Shop Style */
+.about-us-story-text .about-us-story- .about-us-mission-text {
+  flex: 1;
+}
+
+
+.about-us-mission-text {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.about-us-list {
+  font-family: 'Lora', serif;
+  font-size: var(--font-x-small);
+  color: #5c4d3d;
+  line-height: var(--line-height-loose);
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.about-us-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.list-icon {
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media screen and (min-width: 768px) {
+
+  .about-us-text {
+    text-align: left;
+  }
+
+  .text-divider {
+    margin: 1.5rem 0 2.5rem;
+    justify-content: flex-start;
+  }
+
+  .about-us-list {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .about-us-section-title {
+    font-size: 2.2rem;
+  }
+
+  .about-us-text,
+  .about-us-list {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* Team Section */
+/* Meet The Team Section - Elegant Coffee Shop Style */
+.about-us-team {
+  background: #faf8f5;
+  padding: 6rem 2rem;
+  border-top: 1px solid #ece8e2;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+
+.text-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.about-us-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-team-member {
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(92, 61, 46, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.team-image-frame {
+  height: 320px;
+  overflow: hidden;
+  border-bottom: 1px solid #f0ebe5;
+}
+
+.team-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-member-details {
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-team-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: #3a2e22;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.about-us-team-role {
+  font-family: 'Lora', serif;
+  font-size: var(--font-x-small);
+  color: var(--color-primary);
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.about-us-team-bio {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #5c4d3d;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (min-width: 768px) {
+  .about-us-team-grid {
+    gap: 4rem;
+    padding: 0 2rem;
+  }
+
+  .about-us-team-member {
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us-team {
+    padding: 4rem 1.5rem;
+  }
+
+
+  .team-image-frame {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us-team {
+    padding: 3rem 1rem;
+  }
+
+  .about-us-team-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .team-member-details {
+    padding: 1.5rem;
+  }
+}
+
+
+
+/* About-Blog */
+/* Blog Section - Elegant Coffee Shop Style */
+.aboutus-container-blog {
+  background: #faf8f5;
+  padding: 6rem 2rem;
+  border-top: 1px solid #ece8e2;
+}
+
+.aboutus-blog-header {
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.text-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto 2rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.aboutus-blog-header .about-us-text {
+  font-size: var(--font-x-small);
+  color: var(--color-six);
+  line-height: 1.7;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutus-blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutus-blog-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(92, 61, 46, 0.05);
+  transition: transform 0.3s ease;
+}
+.blog-view-all {
+  text-align: center;
+  margin-top: 4rem;
+}
+.view-all-button {
+  font-family: var(--font-playfairDisplay);
+  font-size: 1rem;
+  color: var(--color-six);
+  padding: 0.8rem 2rem;
+  border: 1px solid var(--color-six);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.view-all-button:hover {
+  background: var(--color-six);
+  color: var(--color-bg);
+}
+
+.blog-image-container {
+  height: 240px;
+  overflow: hidden;
+}
+
+.blog-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aboutus-blog-card-content {
+  padding: 2rem;
+}
+
+.blog-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-family: 'Lora', serif;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blog-category {
+  font-weight: 500;
+}
+
+.blog-date {
+  color: #b8a99a;
+}
+
+.aboutus-blog-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: #3a2e22;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.aboutus-blog-card-text {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #5c4d3d;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.blog-read-more {
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.blog-read-more:hover {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .aboutus-blog-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutus-container-blog {
+    padding: 4rem 1.5rem;
+  }
+
+  .blog-image-container {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutus-container-blog {
+    padding: 3rem 1rem;
+  }
+
+  .aboutus-blog-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Values Section - Elegant Coffee Shop Style */
+.about-us-values {
+  background: var(--color-bg);
+  padding: 6rem 2rem;
+  border-top: 1px solid #ece8e2;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.text-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.team-divider, .value-divider, .divider-line {
+  height: 1px;
+  width: 100%;
+  background: var(--color-six);
+}
+
+.coffee-icon {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+.about-us-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-value-card {
+  background: #faf8f5;
+  border-radius: 5px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border: 1px solid #e8e1d9;
+}
+
+.value-icon-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid #e8e1d9;
+  box-shadow: 0 5px 15px rgba(92, 61, 46, 0.05);
+}
+
+.about-us-value-icon {
+  font-size: 2rem;
+  color: #7a5c3c;
+}
+
+.about-us-value-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: #3a2e22;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+
+.about-us-value-text {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #5c4d3d;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (min-width: 768px) {
+  .about-us-values-grid {
+    gap: 3rem;
+    padding: 0 1rem;
+  }
+
+  .about-us-value-card {
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us-values {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-us-values-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us-values {
+    padding: 3rem 1rem;
+  }
+
+  .about-us-values-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .value-icon-container {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* CTA Section - Elegant Coffee Shop Style */
+.about-us-cta {
+  background: var(--color-six);
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(199, 161, 122, 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(199, 161, 122, 0.1) 0%, transparent 30%);
+}
+
+.about-us-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.about-us-cta-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  color: var(--color-bg);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.text-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  width: 100%;
+  max-width: 300px;
+}
+.about-us-cta .text-divider .coffee-icon {
+  color: #c7a17a;
+}
+
+.about-us-cta-text {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  color: var(--color-bg);
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about-us-cta-button {
+  padding: 1rem 2.5rem;
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: none;
+}
+
+.about-us-cta-button.primary {
+  background: var(--color-bg);
+  color: var(--color-six);
+  border: 2px solid var(--color-bg);
+}
+.about-us-cta-button.primary:hover{
+  background: var(--color-six);
+  color:var(--color-bg);
+  transition: var(--transition);
+}
+
+.about-us-cta-button.secondary {
+  background: transparent;
+  color: var(--color-bg);
+  border: 2px solid var(--color-bg);
+}
+.about-us-cta-button.secondary:hover {
+  background: var(--color-bg);
+  color: var(--color-six);
+  transition: var(--transition);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+
+  .about-us-cta-title {
+    font-size: 2rem;
+  }
+
+  .about-us-cta-text {
+    font-size: var(--font-x-small);
+  }
+
+  .about-us-cta-buttons {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us-cta {
+    padding: 3rem 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-us-cta-title {
+    font-size: 1.8rem;
+  }
+
+  .about-us-cta-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-us-cta-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}

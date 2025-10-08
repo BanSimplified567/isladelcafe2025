@@ -1,0 +1,260 @@
+/* Header styles */
+.index-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  background-color: var(--color-six);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: var(--light);
+  z-index: 100;
+  transition: all 0.3s ease;
+  /* Fixed position styles */
+  position: fixed;
+  /* Changed from sticky to fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+
+/* Logo styles */
+.index-IslaDelCafe-Logo-title {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-small);
+  font-weight: 900;
+  color: var(--color-bg);
+}
+
+.index-IslaDelCafe-Logo-title img {
+  width: var(--font-small);
+}
+
+.index-IslaDelCafe-Title {
+  font-family: var(--font-playfairDisplay);
+}
+
+/* Ensure smooth scrolling effect */
+.index-header-scrolled {
+  background-color: var(--color-fifth);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation menu */
+.index-nav {
+  display: flex;
+}
+
+.index-nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.index-nav-list-item {
+  margin: 0 1rem;
+}
+
+.index-nav-list-item a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color:var(--color-bg);
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.index-nav-list-item a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-bg);
+  transition: width 0.3s ease;
+}
+
+.index-nav-list-item a:focus,
+.index-nav-list-item a:active,
+.index-nav-list-item a.active {
+  font-weight: 900;
+}
+
+.index-nav-list-item a:hover {
+  font-weight: 800;
+  color: var(--light);
+}
+
+.index-nav-list-item a:hover:after,
+.index-nav-list-item a.active:after {
+  width: 100%;
+}
+
+/* Search and Sign In section */
+.index-search-signin {
+  display: flex;
+  align-items: center;
+}
+
+.index-search-icon {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+
+
+/* User actions when logged in */
+.index-user-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* Add this to your NavbarMain.css file */
+.icon-svg {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.index-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  color: inherit;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.index-icon-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.index-user-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* Make sure sign in button is properly styled */
+.index-signin-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.index-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Mobile menu toggle - hidden by default for desktop */
+.index-mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--light);
+  /* Ensure icon is visible */
+}
+
+.index-mobile-menu-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .index-header {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+
+  .index-mobile-menu-toggle {
+         display: block;
+        order: 3;
+  }
+
+  .index-nav {
+    display: block;
+    position: fixed;
+    top: 3.5rem;
+    /* Align with header height */
+    left: 0;
+    right: 0;
+    background-color: var(--color-primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 99;
+    /* Just below header */
+  }
+
+  .index-nav-closed {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .index-nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .index-nav-list {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .index-nav-list-item {
+    margin: 0;
+    text-align: center;
+  }
+
+  .index-nav-list-item a {
+    display: block;
+    padding: 0.75rem 1rem;
+  }
+
+  .index-search-signin {
+    order: 2;
+  }
+
+  .index-IslaDelCafe-Logo-title {
+    font-size: 1.25rem;
+    /* Slightly smaller for mobile */
+    order: 1;
+  }
+}
+
+@media (max-width: 381px) {
+
+  .index-IslaDelCafe-Logo-title {
+    font-size: 1rem;
+  }
+
+  .index-nav-list-item a {
+    font-size: 0.9rem;
+  }
+
+  .index-search-icon {
+    margin-right: 0.5rem;
+  }
+
+  .index-icon-button {
+    padding: 0.25rem;
+  }
+}
